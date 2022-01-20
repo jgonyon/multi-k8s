@@ -16,9 +16,9 @@ after_success:
   - docker build -t jgonyon/multi-server ./server
   - docker build -t jgonyon/multi-worker ./worker
 # log in to docker CLI
-- echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+  - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
 # images to docker hub
-- docker push jgonyon/multi-client
-- docker push jgonyon/multi-nginx
-- docker push jgonyon/multi-server
-- docker push jgonyon/multi-worker
+  - docker push jgonyon/multi-client
+  - docker push jgonyon/multi-nginx
+  - docker push jgonyon/multi-server
+  - docker push jgonyon/multi-worker
