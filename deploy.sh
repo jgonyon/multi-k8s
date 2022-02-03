@@ -1,6 +1,6 @@
 docker build -t jgonyon/multi-client:latest -t jgonyon/multi-client:$SHA -f ./client/Dockerfile ./client
 docker build -t jgonyon/multi-server:latest -t jgonyon/multi-server:$SHA -f ./server/Dockerfile ./server
-docker build -t jgonyon/multi-worker:latest -t jgonyon.multi-worker:$SHA -f ./worker/Dockerfile ./worker
+docker build -t jgonyon/multi-worker:latest -t jgonyon/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 docker push jgonyon/multi-client:latest
 docker push jgonyon/multi-server:latest
 docker push jgonyon/multi-worker:latest
